@@ -10,7 +10,7 @@ Core Metadata Fields
 •	Multi-Omics Features (Binary): CNA (Copy Number Alterations), Gene Expression, Methylation
 •	Mechanistic Targets: TARGET, TARGET_PATHWAY
  
-##b🔑 Key Insights & Findings
+## 🔑 Key Insights & Findings
 1. Drug Potency & Pathway Profiles
 •	Broad vs. Selective Efficacy: The overall distribution of LN_IC50 values is left-skewed. Only a small subset of drugs exhibit high universal potency.
 •	Top Performers: The most broadly effective drugs include Romidepsin, Bortezomib, and Sepantronium bromide.
