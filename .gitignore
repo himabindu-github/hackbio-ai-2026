@@ -1,3 +1,4 @@
 # Docs
 *.docx
 *.pdf
+.DS_Store
