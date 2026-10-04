@@ -1,7 +1,7 @@
 
 ## Predicting Cancer Cell Line Drug Sensitivity Using XGBoost
 
-This project uses an optimized XGBoost Regressor to predict how cancer cell lines respond to different drugs. Using data from the Genomics of Drug Sensitivity in Cancer (GDSC) dataset, the model maps biological, molecular, and chemical features to predict drug sensitivity, measured as $LN\_IC50$ (the natural log of the half-maximal inhibitory concentration).
+This project uses an optimized XGBoost Regressor to predict how cancer cell lines respond to different drugs. Using data from the Genomics of Drug Sensitivity in Cancer (GDSC) dataset, the model maps biological, molecular, and chemical features to predict drug sensitivity, measured as $LN\IC50$ (the natural log of the half-maximal inhibitory concentration).
 
 ------------------------------
 ## What this project does
