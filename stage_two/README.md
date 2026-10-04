@@ -15,7 +15,7 @@ This project uses an optimized XGBoost Regressor to predict how cancer cell line
 ### 1. Cleaning & Preventing Data Leakage
 To make sure the model evaluated realistically, a few features were removed before training:
 
-* AUC and Z_SCORE were dropped entirely. Because these are alternative metrics calculated directly from the same dose-response experiments as $LN\_IC50$, keeping them would cheat the model and artificially inflate its scores.
+* AUC and Z_SCORE were dropped entirely. Because these are alternative metrics calculated directly from the same dose-response experiments as LN_IC50, keeping them would cheat the model and artificially inflate its scores.
 * Unique identifiers like COSMIC_ID and DRUG_ID were removed so the model would learn from biological traits rather than specific database tags.
 
 ### 2. Feature Processing
