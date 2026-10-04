@@ -6,7 +6,7 @@ This project uses an optimized XGBoost Regressor to predict how cancer cell line
 ------------------------------
 ## What this project does
 
-* The Goal: Predict drug sensitivity ($LN_IC50$). Lower values mean a cancer cell line is highly sensitive to a drug, while higher values mean increased resistance.
+* The Goal: Predict drug sensitivity (LN_IC50). Lower values mean a cancer cell line is highly sensitive to a drug, while higher values mean increased resistance.
 * The Data: Features include multi-omic profiles (gene expression, methylation, copy number alterations), tissue types, and drug action targets across 162,103 observations.
 * The Solution: A tuned XGBoost regression model that handles the complex, non-linear relationships between biological features and drug performance.
 
