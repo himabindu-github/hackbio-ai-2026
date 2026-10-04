@@ -9,15 +9,16 @@ This project uses an optimized XGBoost Regressor to predict how cancer cell line
 * The Solution: A tuned XGBoost regression model that handles the complex, non-linear relationships between biological features and drug performance.
 
 ------------------------------
-## The Workflow## 1. Cleaning & Preventing Data Leakage
+## The Workflow
+### 1. Cleaning & Preventing Data Leakage
 To make sure the model evaluated realistically, a few features were removed before training:
 
 * AUC and Z_SCORE were dropped entirely. Because these are alternative metrics calculated directly from the same dose-response experiments as $LN\_IC50$, keeping them would cheat the model and artificially inflate its scores.
 * Unique identifiers like COSMIC_ID and DRUG_ID were removed so the model would learn from biological traits rather than specific database tags.
 
-## 2. Feature Processing
+### 2. Feature Processing
 Categorical columns (like drug names, target pathways, and cancer classifications) were converted to a numeric format using one-hot encoding. This expanded the dataset to a clean matrix of 1,298 columns.
-## 3. Model Training
+### 3. Model Training
 The data was split into 80% for training (129,682 records) and 20% for testing (32,421 records), keeping a fixed random seed (42) for reproducibility.
 ------------------------------
 ## Results
