@@ -33,6 +33,7 @@ Tuning the model parameters using a 5-fold cross-validation randomized search ma
 The training R² (0.787) and test R² (0.786) for the tuned model are incredibly close, showing that the model does not suffer from high variance or overfitting on the dataset split.
 ------------------------------
 ## Important Validation Caveat & Summary
+
 While a Test R² of ~0.786 demonstrates strong predictive power on this split, it is important to note a structural limitation in how the model was evaluated.
 Because the dataset was divided using a standard random train–test split, measurements from the same cell lines or the same drugs appear in both the training and testing sets. This allows the model to learn the specific baseline behavior of a drug or cell line and apply that knowledge to the test set, which inflates performance metrics.
 Consequently, these results do not prove that the model can successfully predict how a brand-new, completely unseen drug will perform, or how an untested cell line will behave. To evaluate the model's true generalizability for real-world discovery, future iterations should implement stricter holdout strategies, such as splitting data explicitly by dropping entire drug or cell-line blocks from the training data.
@@ -46,3 +47,4 @@ When looking at which features influenced the predictions the most, a few biolog
 
 
 
+<img width="468" height="636" alt="image" src="https://github.com/user-attachments/assets/ec65fdf9-bfed-4b56-884c-a02d7f41cd8d" />
